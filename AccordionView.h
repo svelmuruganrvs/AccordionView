@@ -38,6 +38,7 @@
 - (void)setOriginalSize:(CGSize)size forIndex:(NSUInteger)index;
 - (void)scrollViewDidScroll:(UIScrollView *)aScrollView;
 
+@property (nonatomic , assign) int sapceBetween_AccordionView;
 @property (nonatomic, assign) NSInteger selectedIndex;
 @property (readonly) BOOL isHorizontal;
 @property (nonatomic, assign) NSTimeInterval animationDuration;
