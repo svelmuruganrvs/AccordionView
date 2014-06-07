@@ -6,6 +6,9 @@ Very simple accordion view in Cocoa Touch.
 Usage
 -----
     AccordionView *accordion = [[AccordionView alloc] initWithFrame:CGRectMake(0, 0, 320, 420)];
+    
+    accordion.sapceBetween_AccordionView=10; // This is an optional int value that makes the accordion tap sapace.If this is not seted there will not be the space between the accordion.
+    
     [self addSubview:accordion];
 
     // Only height is taken into account, so other parameters are just dummy
