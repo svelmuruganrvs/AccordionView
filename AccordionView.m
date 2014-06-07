@@ -30,7 +30,8 @@
     originalSizes = [NSMutableArray new];
     
     self.backgroundColor = [UIColor clearColor];
-    
+    _sapceBetween_AccordionView=0;
+
     scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, [self frame].size.width, [self frame].size.height)];
     scrollView.backgroundColor = [UIColor clearColor];
     [self addSubview:scrollView];
@@ -227,7 +228,7 @@
             CGRect viewFrame = [aView frame];
             CGRect headerFrame = [aHeader frame];
             headerFrame.origin.y = height;
-            height += headerFrame.size.height;
+            height += headerFrame.size.height+_sapceBetween_AccordionView;
             viewFrame.origin.y = height;
             
             if ([selectionIndexes containsIndex:i]) {
